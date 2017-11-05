@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>sensor state</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/sensor.js"></script>
+</head>
+<body>
+    <div class="update_time" style="font-size: 30px"></div>
+    <table class="show_table" style="font-size:22px">
+        <tr>
+            <td> 磁钢：</td>
+            <td>
+                <input type="radio" name="magnetic_steel" value="000" checked="checked" />000
+                <input type="radio" name="magnetic_steel" value="001" />001
+            </td>
+        </tr>
+        <tr>
+            <td>火车：</td>
+            <td>
+                <input type="radio" name="train" value="000" checked="checked" />000
+                <input type="radio" name="train" value="001" />001
+            </td>
+        </tr>
+        <tr>
+
+            <td>雨刷：</td>
+            <td>
+                <input type="radio" name="brush" value="000" checked="checked" />000
+                <input type="radio" name="brush" value="001" />001
+            </td>
+        </tr>
+        <tr>
+            <td> 雨刷复位:</td>
+            <td>
+                <input type="radio" name="brush_reset" value="000" checked="checked" />000
+                <input type="radio" name="brush_reset" value="001" />001
+            </td>
+        </tr>
+        <tr>
+
+            <td> 雨滴:</td>
+            <td>
+                <input type="radio" name="raindrop" value="000" checked="checked" />000
+                <input type="radio" name="raindrop" value="001" />001
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>温度:</td>
+            <td>
+                <input type="radio" name="temperature_state" value="-001" />-001
+                <input type="radio" name="temperature_state" value="000" checked="checked" />000
+                <input type="radio" name="temperature_state" value="001" />001
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>光照:</td>
+            <td>
+                <input type="radio" name="light_state" value="-001" />过低
+                <input type="radio" name="light_state" value="000" checked="checked" />000
+                <input type="radio" name="light_state" value="001" />001
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
