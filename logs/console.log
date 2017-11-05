@@ -3082,3 +3082,1126 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template "getSe
 2017-11-05 19:11:36.783  INFO 18696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
 2017-11-05 19:12:29.667  INFO 18696 --- [Thread-2] c.k.sensor.service.SensorStateListener   : SensorState{id=5, magnetic_steel='001', train='000', brush='000', brush_reset='001', raindrop='000', temperature_state='000', light_state='000', temperature=77.22, light=77.22, update_time=2017-11-05 19:12:29.0}
 2017-11-05 19:12:29.696  INFO 18696 --- [Thread-2] c.k.sensor.service.SensorStateListener   : id=5 : 更新状态为'1'
+2017-11-05 19:46:57.365  INFO 29328 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 29328 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 19:46:57.367  INFO 29328 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 19:46:57.643  INFO 29328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 19:46:57 CST 2017]; root of context hierarchy
+2017-11-05 19:46:59.390  INFO 29328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 19:46:59.401  INFO 29328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 19:46:59.403  INFO 29328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 19:46:59.509  INFO 29328 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 19:46:59.509  INFO 29328 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1899 ms
+2017-11-05 19:46:59.652  INFO 29328 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 19:46:59.655  INFO 29328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 19:46:59.656  INFO 29328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 19:46:59.656  INFO 29328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 19:46:59.656  INFO 29328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 19:46:59.875  INFO 29328 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 19:47:00.172  INFO 29328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 19:46:57 CST 2017]; root of context hierarchy
+2017-11-05 19:47:00.243  INFO 29328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 19:47:00.244  INFO 29328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 19:47:00.247  INFO 29328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 19:47:00.247  INFO 29328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 19:47:00.273  INFO 29328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:47:00.274  INFO 29328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:47:00.311  INFO 29328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:47:00.845  INFO 29328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 19:47:00.906  INFO 29328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 19:47:00.910  INFO 29328 --- [main] com.keysun.sensor.App                    : Started App in 3.817 seconds (JVM running for 4.25)
+2017-11-05 19:47:00.962  INFO 29328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 19:47:00.962  INFO 29328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 19:47:00.984  INFO 29328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-11-05 21:04:31.526  INFO 15592 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 15592 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:04:31.530  INFO 15592 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:04:31.771  INFO 15592 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:04:31 CST 2017]; root of context hierarchy
+2017-11-05 21:04:33.345  INFO 15592 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:04:33.360  INFO 15592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:04:33.361  INFO 15592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:04:33.469  INFO 15592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:04:33.470  INFO 15592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1702 ms
+2017-11-05 21:04:33.606  INFO 15592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:04:33.610  INFO 15592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:04:33.610  INFO 15592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:04:33.610  INFO 15592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:04:33.610  INFO 15592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:04:33.836  INFO 15592 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:04:34.152  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:04:31 CST 2017]; root of context hierarchy
+2017-11-05 21:04:34.227  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:04:34.228  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:04:34.228  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:04:34.229  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:04:34.229  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:04:34.231  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:04:34.232  INFO 15592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:04:34.260  INFO 15592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:04:34.260  INFO 15592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:04:34.294  INFO 15592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:04:34.870  INFO 15592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:04:34.933  INFO 15592 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:04:34.937  INFO 15592 --- [main] com.keysun.sensor.App                    : Started App in 3.715 seconds (JVM running for 4.072)
+2017-11-05 21:04:58.976  INFO 15592 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:04:58.977  INFO 15592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:04:58.995  INFO 15592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-11-05 21:07:06.941  INFO 27984 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 27984 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:07:06.943  INFO 27984 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:07:07.151  INFO 27984 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:07:07 CST 2017]; root of context hierarchy
+2017-11-05 21:07:08.694  INFO 27984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:07:08.707  INFO 27984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:07:08.709  INFO 27984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:07:08.808  INFO 27984 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:07:08.809  INFO 27984 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1661 ms
+2017-11-05 21:07:08.984  INFO 27984 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:07:08.990  INFO 27984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:07:08.991  INFO 27984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:07:08.991  INFO 27984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:07:08.991  INFO 27984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:07:09.206  INFO 27984 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:07:09.486  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:07:07 CST 2017]; root of context hierarchy
+2017-11-05 21:07:09.555  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:07:09.556  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:07:09.557  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:07:09.557  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:07:09.558  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:07:09.561  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:07:09.561  INFO 27984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:07:09.587  INFO 27984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:07:09.587  INFO 27984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:07:09.620  INFO 27984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:07:10.126  INFO 27984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:07:10.177  INFO 27984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:07:10.181  INFO 27984 --- [main] com.keysun.sensor.App                    : Started App in 3.516 seconds (JVM running for 3.867)
+2017-11-05 21:07:10.263  INFO 27984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:07:10.263  INFO 27984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:07:10.282  INFO 27984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-11-05 21:08:05.994  INFO 16992 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 16992 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:08:05.996  INFO 16992 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:08:06.201  INFO 16992 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:08:06 CST 2017]; root of context hierarchy
+2017-11-05 21:08:07.722  INFO 16992 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:08:07.736  INFO 16992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:08:07.737  INFO 16992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:08:07.840  INFO 16992 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:08:07.840  INFO 16992 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1642 ms
+2017-11-05 21:08:07.993  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:08:07.996  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:08:07.997  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:08:07.997  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:08:07.997  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:08:08.225  INFO 16992 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:08:08.539  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:08:06 CST 2017]; root of context hierarchy
+2017-11-05 21:08:08.625  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:08:08.626  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:08:08.626  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:08:08.627  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:08:08.627  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:08:08.630  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:08:08.631  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:08:08.658  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:08.658  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:08.698  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:09.287  INFO 16992 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:08:09.352  INFO 16992 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:08:09.356  INFO 16992 --- [main] com.keysun.sensor.App                    : Started App in 3.64 seconds (JVM running for 3.995)
+2017-11-05 21:08:09.403  INFO 16992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:08:09.403  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:08:09.422  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-11-05 21:08:33.210  INFO 10520 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 10520 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:08:33.212  INFO 10520 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:08:33.442  INFO 10520 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:08:33 CST 2017]; root of context hierarchy
+2017-11-05 21:08:34.896  INFO 10520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:08:34.910  INFO 10520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:08:34.912  INFO 10520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:08:35.016  INFO 10520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:08:35.016  INFO 10520 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1577 ms
+2017-11-05 21:08:35.159  INFO 10520 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:08:35.162  INFO 10520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:08:35.163  INFO 10520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:08:35.163  INFO 10520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:08:35.163  INFO 10520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:08:35.393  INFO 10520 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:08:35.662  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:08:33 CST 2017]; root of context hierarchy
+2017-11-05 21:08:35.730  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:08:35.731  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:08:35.732  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:08:35.732  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:08:35.732  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:08:35.734  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:08:35.735  INFO 10520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:08:35.759  INFO 10520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:35.760  INFO 10520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:35.797  INFO 10520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:08:36.334  INFO 10520 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:08:36.421  INFO 10520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:08:36.426  INFO 10520 --- [main] com.keysun.sensor.App                    : Started App in 3.493 seconds (JVM running for 3.862)
+2017-11-05 21:08:38.780  INFO 10520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:08:38.781  INFO 10520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:08:38.802  INFO 10520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-11-05 21:10:03.960  INFO 1800 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 1800 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:10:03.963  INFO 1800 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:10:04.175  INFO 1800 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:10:04 CST 2017]; root of context hierarchy
+2017-11-05 21:10:05.715  INFO 1800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:10:05.729  INFO 1800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:10:05.733  INFO 1800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:10:05.855  INFO 1800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:10:05.855  INFO 1800 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1683 ms
+2017-11-05 21:10:05.990  INFO 1800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:10:05.994  INFO 1800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:10:05.995  INFO 1800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:10:05.995  INFO 1800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:10:05.995  INFO 1800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:10:06.225  INFO 1800 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:10:06.500  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:10:04 CST 2017]; root of context hierarchy
+2017-11-05 21:10:06.568  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:10:06.570  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:10:06.570  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:10:06.571  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:10:06.571  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:10:06.573  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:10:06.573  INFO 1800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:10:06.603  INFO 1800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:10:06.604  INFO 1800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:10:06.636  INFO 1800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:10:07.152  INFO 1800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:10:07.221  INFO 1800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:10:07.227  INFO 1800 --- [main] com.keysun.sensor.App                    : Started App in 3.545 seconds (JVM running for 3.908)
+2017-11-05 21:10:16.323  INFO 1800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:10:16.324  INFO 1800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:10:16.351  INFO 1800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-11-05 21:13:06.509  INFO 28336 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 28336 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:13:06.513  INFO 28336 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:13:06.742  INFO 28336 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:13:06 CST 2017]; root of context hierarchy
+2017-11-05 21:13:08.439  INFO 28336 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:13:08.452  INFO 28336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:13:08.455  INFO 28336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:13:08.559  INFO 28336 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:13:08.559  INFO 28336 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1820 ms
+2017-11-05 21:13:08.700  INFO 28336 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:13:08.704  INFO 28336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:13:08.704  INFO 28336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:13:08.705  INFO 28336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:13:08.705  INFO 28336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:13:08.943  INFO 28336 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:13:09.207  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:13:06 CST 2017]; root of context hierarchy
+2017-11-05 21:13:09.272  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:13:09.273  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:13:09.273  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:13:09.273  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:13:09.274  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:13:09.276  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:13:09.277  INFO 28336 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:13:09.299  INFO 28336 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:13:09.299  INFO 28336 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:13:09.337  INFO 28336 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:13:09.839  INFO 28336 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:13:09.899  INFO 28336 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:13:09.903  INFO 28336 --- [main] com.keysun.sensor.App                    : Started App in 3.718 seconds (JVM running for 4.07)
+2017-11-05 21:14:05.459  INFO 27152 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 27152 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:14:05.462  INFO 27152 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:14:05.682  INFO 27152 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:14:05 CST 2017]; root of context hierarchy
+2017-11-05 21:14:07.147  INFO 27152 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:14:07.159  INFO 27152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:14:07.160  INFO 27152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:14:07.254  INFO 27152 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:14:07.255  INFO 27152 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1575 ms
+2017-11-05 21:14:07.403  INFO 27152 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:14:07.408  INFO 27152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:14:07.409  INFO 27152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:14:07.409  INFO 27152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:14:07.409  INFO 27152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:14:07.624  INFO 27152 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:14:07.882  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:14:05 CST 2017]; root of context hierarchy
+2017-11-05 21:14:07.953  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:14:07.954  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:14:07.954  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:14:07.955  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:14:07.955  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:14:07.958  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:14:07.958  INFO 27152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:14:07.984  INFO 27152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:14:07.985  INFO 27152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:14:08.018  INFO 27152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:14:08.517  INFO 27152 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:14:08.576  INFO 27152 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:14:08.580  INFO 27152 --- [main] com.keysun.sensor.App                    : Started App in 3.388 seconds (JVM running for 3.739)
+2017-11-05 21:14:16.935  INFO 27152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:14:16.935  INFO 27152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:14:16.953  INFO 27152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-11-05 21:18:49.626  INFO 27804 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 27804 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:18:49.628  INFO 27804 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:18:49.838  INFO 27804 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:18:49 CST 2017]; root of context hierarchy
+2017-11-05 21:18:51.298  INFO 27804 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:18:51.310  INFO 27804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:18:51.311  INFO 27804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:18:51.415  INFO 27804 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:18:51.415  INFO 27804 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1580 ms
+2017-11-05 21:18:51.560  INFO 27804 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:18:51.564  INFO 27804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:18:51.565  INFO 27804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:18:51.565  INFO 27804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:18:51.565  INFO 27804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:18:51.790  INFO 27804 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:18:52.061  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:18:49 CST 2017]; root of context hierarchy
+2017-11-05 21:18:52.125  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:18:52.126  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:18:52.127  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:18:52.127  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:18:52.127  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:18:52.129  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:18:52.130  INFO 27804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:18:52.153  INFO 27804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:18:52.154  INFO 27804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:18:52.185  INFO 27804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:18:52.685  INFO 27804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:18:52.739  INFO 27804 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:18:52.743  INFO 27804 --- [main] com.keysun.sensor.App                    : Started App in 3.383 seconds (JVM running for 3.732)
+2017-11-05 21:19:34.273  INFO 27804 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:19:34.273  INFO 27804 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:19:34.294  INFO 27804 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-11-05 21:19:34.438 ERROR 27804 --- [http-nio-8080-exec-3] o.thymeleaf.templateparser.ErrorHandler  : [THYMELEAF][http-nio-8080-exec-3] Fatal error during parsing
+
+org.xml.sax.SAXParseException: 元素类型 "input" 必须由匹配的结束标记 "</input>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) [na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327) [na:1.8.0_112]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+
+2017-11-05 21:19:34.444 ERROR 27804 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "updateConstant": Exception parsing document: template="updateConstant", line 21 - column 7
+2017-11-05 21:19:34.446 ERROR 27804 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="updateConstant", line 21 - column 7] with root cause
+
+org.xml.sax.SAXParseException: 元素类型 "input" 必须由匹配的结束标记 "</input>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643) ~[na:1.8.0_112]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327) ~[na:1.8.0_112]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+
+2017-11-05 21:20:23.833  INFO 17424 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 17424 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:20:23.837  INFO 17424 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:20:24.047  INFO 17424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:20:24 CST 2017]; root of context hierarchy
+2017-11-05 21:20:25.609  INFO 17424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:20:25.622  INFO 17424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:20:25.624  INFO 17424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:20:25.725  INFO 17424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:20:25.726  INFO 17424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1682 ms
+2017-11-05 21:20:25.872  INFO 17424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:20:25.878  INFO 17424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:20:25.879  INFO 17424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:20:25.879  INFO 17424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:20:25.879  INFO 17424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:20:26.107  INFO 17424 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:20:26.382  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:20:24 CST 2017]; root of context hierarchy
+2017-11-05 21:20:26.463  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:20:26.464  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:20:26.465  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:20:26.465  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:20:26.465  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:20:26.467  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:20:26.468  INFO 17424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:20:26.495  INFO 17424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:20:26.495  INFO 17424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:20:26.526  INFO 17424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:20:27.046  INFO 17424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:20:27.105  INFO 17424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:20:27.110  INFO 17424 --- [main] com.keysun.sensor.App                    : Started App in 3.551 seconds (JVM running for 3.898)
+2017-11-05 21:20:27.215  INFO 17424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:20:27.215  INFO 17424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:20:27.233  INFO 17424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-11-05 21:22:36.135  INFO 1656 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 1656 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:22:36.137  INFO 1656 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:22:36.343  INFO 1656 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:22:36 CST 2017]; root of context hierarchy
+2017-11-05 21:22:37.775  INFO 1656 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:22:37.790  INFO 1656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:22:37.791  INFO 1656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:22:37.891  INFO 1656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:22:37.892  INFO 1656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1552 ms
+2017-11-05 21:22:38.038  INFO 1656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:22:38.042  INFO 1656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:22:38.043  INFO 1656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:22:38.043  INFO 1656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:22:38.043  INFO 1656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:22:38.257  INFO 1656 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:22:38.521  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:22:36 CST 2017]; root of context hierarchy
+2017-11-05 21:22:38.592  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:22:38.593  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:22:38.594  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:22:38.594  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:22:38.594  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:22:38.598  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:22:38.598  INFO 1656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:22:38.626  INFO 1656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:22:38.626  INFO 1656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:22:38.658  INFO 1656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:22:39.191  INFO 1656 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:22:39.248  INFO 1656 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:22:39.252  INFO 1656 --- [main] com.keysun.sensor.App                    : Started App in 3.404 seconds (JVM running for 3.787)
+2017-11-05 21:22:41.308  INFO 1656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:22:41.308  INFO 1656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:22:41.329  INFO 1656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-11-05 21:27:39.262  INFO 30972 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 30972 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:27:39.265  INFO 30972 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:27:39.469  INFO 30972 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:27:39 CST 2017]; root of context hierarchy
+2017-11-05 21:27:40.925  INFO 30972 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:27:40.938  INFO 30972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:27:40.939  INFO 30972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:27:41.056  INFO 30972 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:27:41.056  INFO 30972 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1590 ms
+2017-11-05 21:27:41.195  INFO 30972 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:27:41.200  INFO 30972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:27:41.201  INFO 30972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:27:41.201  INFO 30972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:27:41.201  INFO 30972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:27:41.438  INFO 30972 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:27:41.746  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:27:39 CST 2017]; root of context hierarchy
+2017-11-05 21:27:41.817  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:27:41.818  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:27:41.819  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:27:41.819  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:27:41.820  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:27:41.822  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:27:41.823  INFO 30972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:27:41.848  INFO 30972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:27:41.849  INFO 30972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:27:41.883  INFO 30972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:27:42.442  INFO 30972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:27:42.503  INFO 30972 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:27:42.507  INFO 30972 --- [main] com.keysun.sensor.App                    : Started App in 3.523 seconds (JVM running for 3.884)
+2017-11-05 21:27:43.234  INFO 30972 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:27:43.234  INFO 30972 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:27:43.258  INFO 30972 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-11-05 21:28:25.650  INFO 4076 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 4076 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:28:25.652  INFO 4076 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:28:25.862  INFO 4076 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:28:25 CST 2017]; root of context hierarchy
+2017-11-05 21:28:27.382  INFO 4076 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:28:27.394  INFO 4076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:28:27.395  INFO 4076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:28:27.492  INFO 4076 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:28:27.492  INFO 4076 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1633 ms
+2017-11-05 21:28:27.626  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:28:27.629  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:28:27.630  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:28:27.630  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:28:27.631  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:28:27.876  INFO 4076 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:28:28.140  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:28:25 CST 2017]; root of context hierarchy
+2017-11-05 21:28:28.212  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:28:28.213  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:28:28.213  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:28:28.213  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:28:28.214  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:28:28.216  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:28:28.217  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:28:28.246  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:28:28.246  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:28:28.275  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:28:28.802  INFO 4076 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:28:28.865  INFO 4076 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:28:28.869  INFO 4076 --- [main] com.keysun.sensor.App                    : Started App in 3.501 seconds (JVM running for 3.865)
+2017-11-05 21:28:28.972  INFO 4076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:28:28.972  INFO 4076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:28:28.992  INFO 4076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-05 21:29:51.702  INFO 2460 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 2460 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:29:51.704  INFO 2460 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:29:51.913  INFO 2460 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:29:51 CST 2017]; root of context hierarchy
+2017-11-05 21:29:53.401  INFO 2460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:29:53.414  INFO 2460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:29:53.416  INFO 2460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:29:53.518  INFO 2460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:29:53.518  INFO 2460 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1609 ms
+2017-11-05 21:29:53.656  INFO 2460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:29:53.659  INFO 2460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:29:53.659  INFO 2460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:29:53.659  INFO 2460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:29:53.659  INFO 2460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:29:53.866  INFO 2460 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:29:54.116  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:29:51 CST 2017]; root of context hierarchy
+2017-11-05 21:29:54.184  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:29:54.185  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:29:54.185  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:29:54.185  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:29:54.186  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:29:54.189  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:29:54.189  INFO 2460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:29:54.214  INFO 2460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:29:54.215  INFO 2460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:29:54.249  INFO 2460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:29:54.763  INFO 2460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:29:54.823  INFO 2460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:29:54.827  INFO 2460 --- [main] com.keysun.sensor.App                    : Started App in 3.404 seconds (JVM running for 3.765)
+2017-11-05 21:31:11.004  INFO 26436 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 26436 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:31:11.008  INFO 26436 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:31:11.228  INFO 26436 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:31:11 CST 2017]; root of context hierarchy
+2017-11-05 21:31:12.769  INFO 26436 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:31:12.781  INFO 26436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:31:12.782  INFO 26436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:31:12.879  INFO 26436 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:31:12.880  INFO 26436 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1658 ms
+2017-11-05 21:31:13.035  INFO 26436 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:31:13.040  INFO 26436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:31:13.042  INFO 26436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:31:13.042  INFO 26436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:31:13.043  INFO 26436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:31:13.289  INFO 26436 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:31:13.553  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:31:11 CST 2017]; root of context hierarchy
+2017-11-05 21:31:13.627  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:31:13.628  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:31:13.628  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:31:13.628  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:31:13.628  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:31:13.631  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:31:13.632  INFO 26436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:31:13.657  INFO 26436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:31:13.657  INFO 26436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:31:13.694  INFO 26436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:31:14.225  INFO 26436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:31:14.281  INFO 26436 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:31:14.285  INFO 26436 --- [main] com.keysun.sensor.App                    : Started App in 3.568 seconds (JVM running for 3.93)
+2017-11-05 21:31:18.398  INFO 26436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:31:18.399  INFO 26436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:31:18.421  INFO 26436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-11-05 21:40:58.274  INFO 25120 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 25120 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:40:58.277  INFO 25120 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:40:58.477  INFO 25120 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:40:58 CST 2017]; root of context hierarchy
+2017-11-05 21:40:59.899  INFO 25120 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:40:59.910  INFO 25120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:40:59.911  INFO 25120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:41:00.010  INFO 25120 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:41:00.011  INFO 25120 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1537 ms
+2017-11-05 21:41:00.155  INFO 25120 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:41:00.159  INFO 25120 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:41:00.160  INFO 25120 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:41:00.160  INFO 25120 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:41:00.160  INFO 25120 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:41:00.380  INFO 25120 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:41:00.656  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:40:58 CST 2017]; root of context hierarchy
+2017-11-05 21:41:00.728  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:41:00.729  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:41:00.730  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:41:00.730  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:41:00.732  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:41:00.735  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:41:00.735  INFO 25120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:41:00.758  INFO 25120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:41:00.758  INFO 25120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:41:00.789  INFO 25120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:41:01.308  INFO 25120 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:41:01.361  INFO 25120 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:41:01.366  INFO 25120 --- [main] com.keysun.sensor.App                    : Started App in 3.367 seconds (JVM running for 3.724)
+2017-11-05 21:41:29.580  INFO 25120 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:41:29.581  INFO 25120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:41:29.602  INFO 25120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-11-05 21:44:03.618  INFO 26264 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 26264 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:44:03.620  INFO 26264 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:44:03.846  INFO 26264 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:44:03 CST 2017]; root of context hierarchy
+2017-11-05 21:44:05.437  INFO 26264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:44:05.450  INFO 26264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:44:05.452  INFO 26264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:44:05.564  INFO 26264 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:44:05.564  INFO 26264 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1723 ms
+2017-11-05 21:44:05.713  INFO 26264 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:44:05.717  INFO 26264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:44:05.718  INFO 26264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:44:05.718  INFO 26264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:44:05.718  INFO 26264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:44:05.935  INFO 26264 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:44:06.203  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:44:03 CST 2017]; root of context hierarchy
+2017-11-05 21:44:06.280  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:44:06.281  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:44:06.281  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:44:06.281  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:44:06.282  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:44:06.284  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:44:06.284  INFO 26264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:44:06.310  INFO 26264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:44:06.311  INFO 26264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:44:06.344  INFO 26264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:44:06.854  INFO 26264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:44:06.916  INFO 26264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:44:06.919  INFO 26264 --- [main] com.keysun.sensor.App                    : Started App in 3.574 seconds (JVM running for 3.937)
+2017-11-05 21:44:07.103  INFO 26264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:44:07.103  INFO 26264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:44:07.120  INFO 26264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-11-05 21:46:27.356  INFO 4076 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 4076 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:46:27.359  INFO 4076 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:46:27.576  INFO 4076 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:46:27 CST 2017]; root of context hierarchy
+2017-11-05 21:46:29.032  INFO 4076 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:46:29.044  INFO 4076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:46:29.045  INFO 4076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:46:29.164  INFO 4076 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:46:29.164  INFO 4076 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1592 ms
+2017-11-05 21:46:29.315  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:46:29.318  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:46:29.318  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:46:29.319  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:46:29.319  INFO 4076 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:46:29.530  INFO 4076 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:46:29.782  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:46:27 CST 2017]; root of context hierarchy
+2017-11-05 21:46:29.842  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:46:29.843  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:46:29.844  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:46:29.844  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:46:29.844  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:46:29.847  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:46:29.847  INFO 4076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:46:29.870  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:46:29.871  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:46:29.904  INFO 4076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:46:30.397  INFO 4076 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:46:30.455  INFO 4076 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:46:30.458  INFO 4076 --- [main] com.keysun.sensor.App                    : Started App in 3.387 seconds (JVM running for 3.745)
+2017-11-05 21:46:42.801  INFO 4076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:46:42.801  INFO 4076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:46:42.820  INFO 4076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-11-05 21:52:14.253  INFO 31268 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 31268 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:52:14.255  INFO 31268 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:52:14.464  INFO 31268 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:52:14 CST 2017]; root of context hierarchy
+2017-11-05 21:52:15.944  INFO 31268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:52:15.956  INFO 31268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:52:15.957  INFO 31268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:52:16.060  INFO 31268 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:52:16.061  INFO 31268 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1600 ms
+2017-11-05 21:52:16.198  INFO 31268 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:52:16.202  INFO 31268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:52:16.202  INFO 31268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:52:16.202  INFO 31268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:52:16.202  INFO 31268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:52:16.424  INFO 31268 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:52:16.689  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:52:14 CST 2017]; root of context hierarchy
+2017-11-05 21:52:16.759  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:52:16.760  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:52:16.760  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:52:16.760  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:52:16.760  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateState(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:52:16.763  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:52:16.763  INFO 31268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:52:16.787  INFO 31268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:52:16.787  INFO 31268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:52:16.820  INFO 31268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:52:17.332  INFO 31268 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:52:17.394  INFO 31268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:52:17.399  INFO 31268 --- [main] com.keysun.sensor.App                    : Started App in 3.414 seconds (JVM running for 3.803)
+2017-11-05 21:53:11.631  INFO 31268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:53:11.631  INFO 31268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:53:11.653  INFO 31268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-11-05 21:55:31.937  INFO 30840 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 30840 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:55:31.940  INFO 30840 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:55:32.166  INFO 30840 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:55:32 CST 2017]; root of context hierarchy
+2017-11-05 21:55:33.636  INFO 30840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:55:33.647  INFO 30840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:55:33.649  INFO 30840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:55:33.746  INFO 30840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:55:33.746  INFO 30840 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1583 ms
+2017-11-05 21:55:33.891  INFO 30840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:55:33.894  INFO 30840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:55:33.895  INFO 30840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:55:33.895  INFO 30840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:55:33.895  INFO 30840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:55:34.122  INFO 30840 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:55:34.401  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:55:32 CST 2017]; root of context hierarchy
+2017-11-05 21:55:34.481  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:55:34.482  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:55:34.483  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:55:34.483  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:55:34.483  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:55:34.486  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:55:34.486  INFO 30840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:55:34.512  INFO 30840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:55:34.512  INFO 30840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:55:34.549  INFO 30840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:55:35.064  INFO 30840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:55:35.124  INFO 30840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:55:35.127  INFO 30840 --- [main] com.keysun.sensor.App                    : Started App in 3.618 seconds (JVM running for 3.987)
+2017-11-05 21:56:36.366  INFO 30840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:56:36.366  INFO 30840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:56:36.385  INFO 30840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-11-05 21:57:54.996  INFO 13068 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 13068 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 21:57:54.998  INFO 13068 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 21:57:55.221  INFO 13068 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:57:55 CST 2017]; root of context hierarchy
+2017-11-05 21:57:56.797  INFO 13068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 21:57:56.811  INFO 13068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 21:57:56.812  INFO 13068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 21:57:56.909  INFO 13068 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 21:57:56.910  INFO 13068 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1692 ms
+2017-11-05 21:57:57.051  INFO 13068 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 21:57:57.055  INFO 13068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 21:57:57.055  INFO 13068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 21:57:57.055  INFO 13068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 21:57:57.055  INFO 13068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 21:57:57.277  INFO 13068 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 21:57:57.538  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 21:57:55 CST 2017]; root of context hierarchy
+2017-11-05 21:57:57.607  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 21:57:57.609  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 21:57:57.609  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 21:57:57.610  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONObject)
+2017-11-05 21:57:57.610  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 21:57:57.613  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 21:57:57.614  INFO 13068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 21:57:57.641  INFO 13068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:57:57.641  INFO 13068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:57:57.674  INFO 13068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 21:57:58.169  INFO 13068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 21:57:58.231  INFO 13068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 21:57:58.236  INFO 13068 --- [main] com.keysun.sensor.App                    : Started App in 3.533 seconds (JVM running for 3.898)
+2017-11-05 21:58:00.793  INFO 13068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 21:58:00.793  INFO 13068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 21:58:00.813  INFO 13068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-05 21:58:15.909  WARN 13068 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2017-11-05 22:00:14.906  INFO 5688 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 5688 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:00:14.909  INFO 5688 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:00:15.121  INFO 5688 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:00:15 CST 2017]; root of context hierarchy
+2017-11-05 22:00:16.629  INFO 5688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:00:16.642  INFO 5688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:00:16.643  INFO 5688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:00:16.745  INFO 5688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:00:16.745  INFO 5688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1627 ms
+2017-11-05 22:00:16.890  INFO 5688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:00:16.894  INFO 5688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:00:16.895  INFO 5688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:00:16.895  INFO 5688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:00:16.895  INFO 5688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:00:17.109  INFO 5688 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:00:17.374  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:00:15 CST 2017]; root of context hierarchy
+2017-11-05 22:00:17.451  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:00:17.452  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:00:17.452  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:00:17.452  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:00:17.453  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONObject)
+2017-11-05 22:00:17.456  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:00:17.457  INFO 5688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:00:17.482  INFO 5688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:00:17.482  INFO 5688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:00:17.519  INFO 5688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:00:18.044  INFO 5688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:00:18.100  INFO 5688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:00:18.104  INFO 5688 --- [main] com.keysun.sensor.App                    : Started App in 3.492 seconds (JVM running for 3.887)
+2017-11-05 22:00:20.094  INFO 5688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:00:20.095  INFO 5688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:00:20.115  INFO 5688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-05 22:01:59.129  INFO 27224 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 27224 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:01:59.131  INFO 27224 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:01:59.339  INFO 27224 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:01:59 CST 2017]; root of context hierarchy
+2017-11-05 22:02:00.914  INFO 27224 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:02:00.927  INFO 27224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:02:00.928  INFO 27224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:02:01.034  INFO 27224 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:02:01.034  INFO 27224 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1699 ms
+2017-11-05 22:02:01.182  INFO 27224 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:02:01.186  INFO 27224 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:02:01.187  INFO 27224 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:02:01.187  INFO 27224 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:02:01.187  INFO 27224 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:02:01.400  INFO 27224 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:02:01.660  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:01:59 CST 2017]; root of context hierarchy
+2017-11-05 22:02:01.732  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:02:01.734  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:02:01.735  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:02:01.735  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:02:01.736  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONArray)
+2017-11-05 22:02:01.738  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:02:01.739  INFO 27224 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:02:01.765  INFO 27224 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:01.765  INFO 27224 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:01.797  INFO 27224 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:02.314  INFO 27224 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:02:02.374  INFO 27224 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:02:02.377  INFO 27224 --- [main] com.keysun.sensor.App                    : Started App in 3.554 seconds (JVM running for 3.951)
+2017-11-05 22:02:03.704  INFO 27224 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:02:03.705  INFO 27224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:02:03.723  INFO 27224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-11-05 22:02:32.794  INFO 23568 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 23568 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:02:32.797  INFO 23568 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:02:33.012  INFO 23568 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:02:33 CST 2017]; root of context hierarchy
+2017-11-05 22:02:34.542  INFO 23568 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:02:34.557  INFO 23568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:02:34.558  INFO 23568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:02:34.673  INFO 23568 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:02:34.673  INFO 23568 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1665 ms
+2017-11-05 22:02:34.810  INFO 23568 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:02:34.814  INFO 23568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:02:34.814  INFO 23568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:02:34.814  INFO 23568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:02:34.814  INFO 23568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:02:35.041  INFO 23568 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:02:35.302  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:02:33 CST 2017]; root of context hierarchy
+2017-11-05 22:02:35.370  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:02:35.371  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:02:35.371  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:02:35.372  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:02:35.372  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONArray)
+2017-11-05 22:02:35.374  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:02:35.374  INFO 23568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:02:35.396  INFO 23568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:35.397  INFO 23568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:35.431  INFO 23568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:02:35.977  INFO 23568 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:02:36.032  INFO 23568 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:02:36.036  INFO 23568 --- [main] com.keysun.sensor.App                    : Started App in 3.569 seconds (JVM running for 3.962)
+2017-11-05 22:02:38.119  INFO 23568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:02:38.120  INFO 23568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:02:38.139  INFO 23568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-11-05 22:03:33.400  INFO 9952 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 9952 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:03:33.403  INFO 9952 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:03:33.609  INFO 9952 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:03:33 CST 2017]; root of context hierarchy
+2017-11-05 22:03:35.117  INFO 9952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:03:35.130  INFO 9952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:03:35.131  INFO 9952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:03:35.257  INFO 9952 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:03:35.258  INFO 9952 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1652 ms
+2017-11-05 22:03:35.431  INFO 9952 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:03:35.436  INFO 9952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:03:35.436  INFO 9952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:03:35.436  INFO 9952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:03:35.437  INFO 9952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:03:35.662  INFO 9952 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:03:36.002  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:03:33 CST 2017]; root of context hierarchy
+2017-11-05 22:03:36.074  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:03:36.075  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:03:36.075  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:03:36.076  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(com.alibaba.fastjson.JSONArray)
+2017-11-05 22:03:36.077  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:03:36.080  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:03:36.080  INFO 9952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:03:36.106  INFO 9952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:03:36.107  INFO 9952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:03:36.140  INFO 9952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:03:36.692  INFO 9952 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:03:36.750  INFO 9952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:03:36.754  INFO 9952 --- [main] com.keysun.sensor.App                    : Started App in 3.64 seconds (JVM running for 4.003)
+2017-11-05 22:03:36.921  INFO 9952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:03:36.922  INFO 9952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:03:36.939  INFO 9952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-11-05 22:04:30.831  INFO 12232 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 12232 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:04:30.833  INFO 12232 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:04:31.039  INFO 12232 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:04:31 CST 2017]; root of context hierarchy
+2017-11-05 22:04:32.537  INFO 12232 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:04:32.549  INFO 12232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:04:32.550  INFO 12232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:04:32.660  INFO 12232 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:04:32.660  INFO 12232 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1624 ms
+2017-11-05 22:04:32.811  INFO 12232 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:04:32.814  INFO 12232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:04:32.815  INFO 12232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:04:32.815  INFO 12232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:04:32.816  INFO 12232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:04:33.019  INFO 12232 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:04:33.269  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:04:31 CST 2017]; root of context hierarchy
+2017-11-05 22:04:33.336  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:04:33.337  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:04:33.337  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:04:33.338  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(java.lang.String)
+2017-11-05 22:04:33.338  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:04:33.340  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:04:33.340  INFO 12232 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:04:33.364  INFO 12232 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:04:33.365  INFO 12232 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:04:33.396  INFO 12232 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:04:33.938  INFO 12232 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:04:33.998  INFO 12232 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:04:34.002  INFO 12232 --- [main] com.keysun.sensor.App                    : Started App in 3.461 seconds (JVM running for 3.835)
+2017-11-05 22:04:34.231  INFO 12232 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:04:34.231  INFO 12232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:04:34.254  INFO 12232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-11-05 22:06:28.050  INFO 21632 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 21632 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:06:28.053  INFO 21632 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:06:28.278  INFO 21632 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:06:28 CST 2017]; root of context hierarchy
+2017-11-05 22:06:29.864  INFO 21632 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:06:29.877  INFO 21632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:06:29.879  INFO 21632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:06:29.993  INFO 21632 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:06:29.993  INFO 21632 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1718 ms
+2017-11-05 22:06:30.145  INFO 21632 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:06:30.149  INFO 21632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:06:30.150  INFO 21632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:06:30.150  INFO 21632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:06:30.150  INFO 21632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:06:30.367  INFO 21632 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:06:30.618  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:06:28 CST 2017]; root of context hierarchy
+2017-11-05 22:06:30.729  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:06:30.730  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:06:30.731  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:06:30.732  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:06:30.732  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(java.lang.String)
+2017-11-05 22:06:30.736  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:06:30.736  INFO 21632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:06:30.764  INFO 21632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:06:30.765  INFO 21632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:06:30.798  INFO 21632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:06:31.349  INFO 21632 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:06:31.407  INFO 21632 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:06:31.410  INFO 21632 --- [main] com.keysun.sensor.App                    : Started App in 3.652 seconds (JVM running for 4.013)
+2017-11-05 22:06:32.755  INFO 21632 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:06:32.756  INFO 21632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:06:32.776  INFO 21632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-05 22:06:37.812  INFO 21632 --- [http-nio-8080-exec-4] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-11-05 22:06:37.860  INFO 21632 --- [http-nio-8080-exec-4] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-11-05 22:06:37.869 ERROR 21632 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [update sensor_constant set constant_type=?,constant_low=?,constant_hight=? where id = ?]; nested exception is java.sql.SQLException: No value specified for parameter 4] with root cause
+
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114) ~[tomcat-jdbc-8.5.20.jar:na]
+	at com.sun.proxy.$Proxy65.executeUpdate(Unknown Source) ~[na:na]
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:877) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:870) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:870) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:931) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:941) ~[spring-jdbc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.keysun.sensor.controller.SensorController.updateConstant(SensorController.java:80) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+
+2017-11-05 22:08:02.747  INFO 16992 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 16992 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:08:02.751  INFO 16992 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:08:02.967  INFO 16992 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:08:02 CST 2017]; root of context hierarchy
+2017-11-05 22:08:04.455  INFO 16992 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:08:04.466  INFO 16992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:08:04.468  INFO 16992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:08:04.574  INFO 16992 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:08:04.575  INFO 16992 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1612 ms
+2017-11-05 22:08:04.716  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:08:04.720  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:08:04.721  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:08:04.721  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:08:04.722  INFO 16992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:08:04.930  INFO 16992 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:08:05.196  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:08:02 CST 2017]; root of context hierarchy
+2017-11-05 22:08:05.270  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:08:05.272  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:08:05.272  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:08:05.272  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:08:05.273  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(java.lang.String)
+2017-11-05 22:08:05.276  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:08:05.276  INFO 16992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:08:05.309  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:08:05.310  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:08:05.353  INFO 16992 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:08:05.864  INFO 16992 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:08:05.924  INFO 16992 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:08:05.929  INFO 16992 --- [main] com.keysun.sensor.App                    : Started App in 3.458 seconds (JVM running for 3.813)
+2017-11-05 22:08:06.106  INFO 16992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:08:06.106  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:08:06.129  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-11-05 22:10:28.095  INFO 13648 --- [main] com.keysun.sensor.App                    : Starting App on DESKTOP-LSI8QIJ with PID 13648 (D:\AllWorks\sensor\target\classes started by hong in D:\AllWorks\sensor)
+2017-11-05 22:10:28.098  INFO 13648 --- [main] com.keysun.sensor.App                    : The following profiles are active: dev
+2017-11-05 22:10:28.298  INFO 13648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:10:28 CST 2017]; root of context hierarchy
+2017-11-05 22:10:29.995  INFO 13648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-11-05 22:10:30.024  INFO 13648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 22:10:30.025  INFO 13648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 22:10:30.169  INFO 13648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 22:10:30.170  INFO 13648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1876 ms
+2017-11-05 22:10:30.337  INFO 13648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 22:10:30.341  INFO 13648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 22:10:30.341  INFO 13648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 22:10:30.341  INFO 13648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 22:10:30.342  INFO 13648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 22:10:30.545  INFO 13648 --- [main] c.k.sensor.service.SensorStateListener   : starting
+2017-11-05 22:10:30.848  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4461c7e3: startup date [Sun Nov 05 22:10:28 CST 2017]; root of context hierarchy
+2017-11-05 22:10:30.920  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.index()
+2017-11-05 22:10:30.921  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getConstant()
+2017-11-05 22:10:30.921  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/constant]}" onto public java.lang.String com.keysun.sensor.controller.SensorController.constant()
+2017-11-05 22:10:30.921  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSensorState],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.getSensorState()
+2017-11-05 22:10:30.922  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateConstant],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject com.keysun.sensor.controller.SensorController.updateConstant(java.lang.String)
+2017-11-05 22:10:30.924  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 22:10:30.924  INFO 13648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 22:10:30.948  INFO 13648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:10:30.948  INFO 13648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:10:30.985  INFO 13648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 22:10:31.519  INFO 13648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 22:10:31.575  INFO 13648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-11-05 22:10:31.579  INFO 13648 --- [main] com.keysun.sensor.App                    : Started App in 3.763 seconds (JVM running for 4.12)
+2017-11-05 22:10:31.731  INFO 13648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 22:10:31.731  INFO 13648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 22:10:31.750  INFO 13648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
