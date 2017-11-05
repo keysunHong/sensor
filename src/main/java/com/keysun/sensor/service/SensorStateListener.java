@@ -80,7 +80,7 @@ public class SensorStateListener extends Thread {
                     StringBuffer sb = new StringBuffer();
                     sb.append("id=");
                     sb.append(sensorState.getId());
-                    sb.append(" : ¸üÐÂ×´Ì¬Îª'");
+                    sb.append(" :the state is '");
                     sb.append(update);
                     sb.append("'");
                     logger.info(sb.toString());
